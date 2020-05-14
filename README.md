@@ -81,7 +81,6 @@ Become a sponsor and get your logo on our README on GitHub with a link to your s
 
 - Permission Authentication
   - Page permission
-  - Directive permission
   - Permission configuration page
   - Two-step login
 
@@ -123,13 +122,8 @@ Become a sponsor and get your logo on our README on GitHub with a link to your s
   - Avatar Upload
   - Back To Top
   - Drag Dialog
-  - Drag Select
   - Drag Kanban
   - Drag List
-  - SplitPane
-  - Dropzone
-  - Sticky
-  - CountTo
 
 - Advanced Example
 - Dashboard

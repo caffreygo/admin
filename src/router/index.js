@@ -76,7 +76,8 @@ export const constantRoutes = [
         path: 'dashboard',
         component: () => import('@/views/dashboard/index'),
         name: 'Dashboard',
-        meta: { title: 'Dashboard', icon: 'dashboard', affix: true }
+        meta: { title: 'Dashboard', icon: 'dashboard' }
+        // meta: { title: 'Dashboard', icon: 'dashboard', affix: true }
       }
     ]
   },
@@ -120,15 +121,6 @@ export const asyncRoutes = [
         meta: {
           title: 'Page Permission',
           roles: ['admin'] // or you can only set roles in sub nav
-        }
-      },
-      {
-        path: 'directive',
-        component: () => import('@/views/permission/directive'),
-        name: 'DirectivePermission',
-        meta: {
-          title: 'Directive Permission'
-          // if do not set roles, means: this page does not require permission
         }
       },
       {

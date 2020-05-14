@@ -69,14 +69,6 @@ export const asyncRoutes = [
         }
       },
       {
-        path: 'directive',
-        component: 'views/permission/directive',
-        name: 'DirectivePermission',
-        meta: {
-          title: 'Directive Permission'
-        }
-      },
-      {
         path: 'role',
         component: 'views/permission/role',
         name: 'RolePermission',
@@ -111,18 +103,6 @@ export const asyncRoutes = [
         meta: { title: 'Avatar Upload' }
       },
       {
-        path: 'dropzone',
-        component: 'views/components-demo/dropzone',
-        name: 'DropzoneDemo',
-        meta: { title: 'Dropzone' }
-      },
-      {
-        path: 'sticky',
-        component: 'views/components-demo/sticky',
-        name: 'StickyDemo',
-        meta: { title: 'Sticky' }
-      },
-      {
         path: 'mixin',
         component: 'views/components-demo/mixin',
         name: 'ComponentMixinDemo',
@@ -133,12 +113,6 @@ export const asyncRoutes = [
         component: 'views/components-demo/drag-dialog',
         name: 'DragDialogDemo',
         meta: { title: 'Drag Dialog' }
-      },
-      {
-        path: 'drag-select',
-        component: 'views/components-demo/drag-select',
-        name: 'DragSelectDemo',
-        meta: { title: 'Drag Select' }
       },
     ]
   },
