@@ -135,7 +135,6 @@ Se un patrocinante y pon tu logo en nuestro README on GitHub con un enlace direc
 - Registro de Errores
 - Tablero de indicadores
 - Página de Guías
-- ECharts (Gráficos)
 - Portapapeles
 - Convertidor de Markdown a html
 ```

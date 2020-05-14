@@ -150,8 +150,6 @@ Become a sponsor and get your logo on our README on GitHub with a link to your s
 - 错误日志
 - Dashboard
 - 引导页
-- ECharts 图表
-- Clipboard(剪贴复制)
 - Markdown2html
 ```
 
