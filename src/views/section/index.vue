@@ -1,7 +1,15 @@
 <template>
   <div class="section-container">
-    <el-table :data="tableData" row-key="id" border highlight-current-row>
+    <el-table
+      :data="tableData"
+      row-key="id"
+      border
+      highlight-current-row
+      @selection-change="handleSelectionChange"
+    >
       >
+      >
+      <el-table-column type="selection" width="55" />
       <el-table-column prop="sectionName" label="栏目名称" sortable width="180" />
       <el-table-column prop="pageIdentification" label="页面标识" sortable width="180" />
       <el-table-column label="有效">
@@ -24,9 +32,6 @@
           <i class="el-icon-top" @click="handleSort(scope.row,true)" />
           <i class="el-icon-bottom" @click="handleSort(scope.row, false)" />
         </template>
-      </el-table-column>
-      <el-table-column align="center" label="Drag" width="80">
-        <template slot-scope="{}">hello</template>
       </el-table-column>
     </el-table>
   </div>
