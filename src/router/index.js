@@ -94,6 +94,19 @@ export const constantRoutes = [
         meta: { title: 'Profile', icon: 'user', noCache: true }
       }
     ]
+  },
+  {
+    path: '/section',
+    component: Layout,
+    redirect: '/section/index',
+    children: [
+      {
+        path: 'index',
+        component: () => import('@/views/section/index'),
+        name: 'Section',
+        meta: { title: '栏目管理', icon: 'section' }
+      }
+    ]
   }
 ]
 
