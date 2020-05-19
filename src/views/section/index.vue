@@ -37,7 +37,9 @@
           </template>
         </el-table-column>
         <el-table-column align="center" label="Drag" width="80">
-          <template slot-scope="{}">hello</template>
+          <template
+            slot-scope="{}"
+          >hello</template>
         </el-table-column>
       </el-table>
     </div>
@@ -79,27 +81,27 @@
         </span>
       </el-dialog>
 
-      <el-dialog title="提示" :visible.sync="deleteDialogVisible" width="30%">
+      <el-dialog :visible.sync="deleteDialogVisible" width="50%">
         <span>确定删除操作么?此操作无法回退!</span>
         <span slot="footer" class="dialog-footer">
           <el-button @click="deleteDialogVisible = false">取 消</el-button>
-          <el-button type="primary" @click="handleDelete">确 定</el-button>
+          <el-button type="danger" @click="handleDelete">确 定</el-button>
         </span>
       </el-dialog>
     </div>
 
-    <div>
+    <!-- <div>
       <fluid />
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
-import fluid from './components/index'
+// import fluid from "./components/index";
 export default {
-  components: {
-    fluid
-  },
+  // components: {
+  //   fluid
+  // },
   data() {
     return {
       tableData: [],
@@ -274,14 +276,16 @@ export default {
         this.copyOrRemoveVisible = true
       } else if (btnName === '删除' || btnName === '撤回') {
         this.deleteDialogVisible = true
+      } else if (btnName === '添加') {
+        this.$router.push('/operate/tabPanel')
       }
     },
     handleDelete() {
       this.$confirm('确定删除?')
-        .then((_) => {
+        .then(_ => {
           console.log('delete success')
         })
-        .catch((_) => {
+        .catch(_ => {
           console.log('cancel delete')
         })
       this.deleteDialogVisible = false
